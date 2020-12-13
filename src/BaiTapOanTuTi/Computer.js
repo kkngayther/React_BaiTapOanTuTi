@@ -5,7 +5,7 @@ class Computer extends Component {
     render() {
         return (
             <div className="col-4">
-                <div className="col-4" style={{ display: 'grid', justifyContent: 'center' }}>
+                <div style={{ display: 'grid', justifyContent: 'center' }}>
                     <img width="180" height="180" style={{ background: 'white' }} src={this.props.computer.hinhAnh}/>
                     <img width="180" height="180" src="./img/imgOanTuTi/playerComputer.png" />
                 </div>

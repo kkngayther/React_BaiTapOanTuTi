@@ -8,7 +8,11 @@ class KetQuaOanTuTi extends Component {
                 <h1 className="text-warning display-4">{this.props.ketQua}</h1>
                 <h1 className="text-success display-4 mt-4">Số bàn thắng: <span>{this.props.soBanThang}</span></h1>
                 <h1 className="text-success display-4 mt-4">Số bàn chơi: <span>{this.props.soBanChoi}</span></h1>
-                <button className="btn btn-success mt-4">Play Game</button>
+                <button className="btn btn-success mt-4" onClick={() => {
+                        this.props.dispatch({
+                            type: 'RANDOM_OAN_TU_TI'
+                        })
+                    }}>Play Game</button>
             </div>
         );
     }

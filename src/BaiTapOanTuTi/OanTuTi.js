@@ -8,7 +8,7 @@ class OanTuTi extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <div className="row mt-4">
+                <div className="row mt-4 justify-content-center">
                     <Player />
                     <KetQuaOanTuTi />
                     <Computer />
