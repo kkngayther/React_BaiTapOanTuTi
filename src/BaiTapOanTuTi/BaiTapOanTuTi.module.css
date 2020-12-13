@@ -1,0 +1,16 @@
+@font-face{
+    font-family: fontGame;
+    src: url('../assets/imgOanTuTi/Pony.ttf');
+}
+
+.bgGame{
+    background-image: url('../assets/imgOanTuTi/bgGame.png');
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    font-family: fontGame;
+}
