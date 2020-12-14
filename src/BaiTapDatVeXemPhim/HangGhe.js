@@ -8,7 +8,7 @@ class HangGhe extends Component {
             let cssGheDaDat = '';
 
             if (Number(ghe.soGhe)%1 === 0){
-                return <span className={`${styleGame.rowNumber}`}>{ghe.soGhe}</span>
+                return <span className={`${styleGame.rowNumber} ml-5`}>{ghe.soGhe}</span>
             }
 
             if (ghe.daDat){
@@ -42,7 +42,7 @@ class HangGhe extends Component {
     }
     render() {
         return (
-            <div className="text-light text-left ml-5 mt-2" style={{fontSize: 30}}>
+            <div className="text-light text-left mt-2" style={{fontSize: 20}}>
                 {this.props.hangGhe.hang} {this.renderGhe()}
             </div>
         );

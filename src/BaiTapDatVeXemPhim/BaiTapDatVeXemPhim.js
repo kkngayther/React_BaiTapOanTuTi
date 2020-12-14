@@ -23,16 +23,16 @@ class BaiTapDatVeXemPhim extends Component {
 
 
                             <div className="col-8">
-                                <h1 className="text-warning display-4">BÀI TẬP ĐẶT VÉ CYBERLEARN.VN</h1>
-                                <div className="text-light mt-4" style={{fontSize:'25px'}}>Màn hình</div>
-                                <div className="d-flex justify-content-center mt-2" style={{flexDirection:'column'}}>
+                                <h1 className="text-warning">BÀI TẬP ĐẶT VÉ CYBERLEARN.VN</h1>
+                                <div className="text-light mt-3" style={{fontSize:'20px'}}>Màn hình</div>
+                                <div className="d-flex justify-content-center mt-2 ml-5" style={{flexDirection:'column'}}>
                                     <div className={`${styleGame.screen}`}></div>
                                     {this.renderHangGhe()}
                                 </div>                             
                             </div>
 
                             <div className="col-4">
-                                <h1 className="text-light display-4">DANH SÁCH GHẾ BẠN CHỌN</h1>
+                                <h1 className="text-light">DANH SÁCH GHẾ BẠN CHỌN</h1>
                                 <ThongTin />
                             </div>
                         </div>
