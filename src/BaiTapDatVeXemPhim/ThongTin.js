@@ -22,15 +22,15 @@ class ThongTin extends Component {
             <div>
                 <div className="text-left">
                     <button className={`${styleGame.gheDuocChon}`}></button>
-                    <span className="text-light ml-3" style={{ fontSize: '30px' }}>Ghế đã đặt</span>
+                    <span className="text-light ml-3" style={{ fontSize: '25px' }}>Ghế đã đặt</span>
                     <br />
                     <button className={`${styleGame.gheDangChon}`}></button>
-                    <span className="text-light ml-3" style={{ fontSize: '30px' }}>Ghế đang chọn</span>
+                    <span className="text-light ml-3" style={{ fontSize: '25px' }}>Ghế đang chọn</span>
                     <br />
                     <button className={`${styleGame.ghe}`} style={{ margin: '0' }}></button>
-                    <span className="text-light ml-3" style={{ fontSize: '30px' }}>Ghế chưa đặt</span>
+                    <span className="text-light ml-3" style={{ fontSize: '25px' }}>Ghế chưa đặt</span>
                 </div>
-                <div className="mt-5">
+                <div className="mt-3">
                     <table className="table text-light" border={2}>
                         <thead>
                             <tr style={{fontSize:'25px'}}>
