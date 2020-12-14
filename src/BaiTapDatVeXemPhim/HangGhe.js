@@ -42,7 +42,11 @@ class HangGhe extends Component {
     }
     render() {
         return (
+<<<<<<< HEAD
             <div className="text-light text-left mt-2" style={{fontSize: 20}}>
+=======
+            <div className="text-light text-left  mt-2" style={{fontSize: 20}}>
+>>>>>>> a5f90a0514b8158bad063f82ea9a360885cf76f0
                 {this.props.hangGhe.hang} {this.renderGhe()}
             </div>
         );

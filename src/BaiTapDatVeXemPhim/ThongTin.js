@@ -30,7 +30,7 @@ class ThongTin extends Component {
                     <button className={`${styleGame.ghe}`} style={{ margin: '0' }}></button>
                     <span className="text-light ml-3" style={{ fontSize: '25px' }}>Ghế chưa đặt</span>
                 </div>
-                <div className="mt-5">
+                <div className="mt-3">
                     <table className="table text-light" border={2}>
                         <thead>
                             <tr style={{fontSize:'25px'}}>
