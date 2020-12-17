@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styleGame from './BaiTapDatVeXemPhim.module.css';
 import {connect} from 'react-redux'
+import { xoaGheAction } from '../redux/actions/BaiTapDatVeActions';
 
 class ThongTin extends Component {
     renderDanhSachGheDanhChon = () => {
@@ -9,10 +10,7 @@ class ThongTin extends Component {
                 <td>{ghe.soGhe}</td>
                 <td>{ghe.gia}</td>
                 <td><button className="btn btn-danger" onClick={() => {
-                    this.props.dispatch({
-                        type:'XOA_GHE',
-                        ghe
-                    })
+                    this.props.dispatch(xoaGheAction(ghe))
                 }}>Hủy</button></td>
             </tr>
         })

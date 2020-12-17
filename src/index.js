@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // Cau hinh redux
 import { Provider } from 'react-redux';
-import {store} from './redux/configStore'
+import {store} from './redux/reducers/configStore'
 
 ReactDOM.render(
   <Provider store={store}>

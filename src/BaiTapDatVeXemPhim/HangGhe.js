@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styleGame from './BaiTapDatVeXemPhim.module.css';
-import {connect} from 'react-redux'
+import {connect} from 'react-redux';
+import {datGheAction} from '../redux/actions/BaiTapDatVeActions'
 
 class HangGhe extends Component {
     renderGhe = () => {
@@ -21,20 +22,14 @@ class HangGhe extends Component {
             let ind = this.props.mangGheDangDat.findIndex(gheDangDat => gheDangDat.soGhe === ghe.soGhe);
             if (ind !== -1){
                 return <button className={`${styleGame.ghe} ${styleGame.gheDangChon}`} key={index} onClick={() => {
-                    this.props.dispatch({
-                        type: 'CHON_GHE',
-                        ghe
-                    })
+                    this.props.dispatch( datGheAction(ghe) )
                 }}>
                 {ghe.soGhe}
             </button>
             }
 
             return <button className={`${styleGame.ghe}`} key={index} onClick={() => {
-                this.props.dispatch({
-                    type: 'CHON_GHE',
-                    ghe
-                })
+                this.props.dispatch( datGheAction(ghe) )
             }}>
                 {ghe.soGhe}
             </button>
